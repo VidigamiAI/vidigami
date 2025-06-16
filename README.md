@@ -1,0 +1,2 @@
+# vidigami
+A dummy repository
