@@ -1,0 +1,97 @@
+{
+  "$meta": {
+    "description": "MUI default theme values — the base Vidigami builds on. Reference only; the app gets these from MUI directly.",
+    "muiVersion": "7.x (seeded)",
+    "status": "SEED — run `npm run tokens:mui` to regenerate the complete file (including all 25 shadows) from the installed MUI package.",
+    "verified": "Typography and transitions checked against MUI source on 2026-10-26; palette, breakpoints, spacing, shape and zIndex are MUI's long-standing defaults (unchanged since v5)."
+  },
+  "palette": {
+    "light": {
+      "primary": { "main": "#1976d2", "light": "#42a5f5", "dark": "#1565c0", "contrastText": "#fff" },
+      "secondary": { "main": "#9c27b0", "light": "#ba68c8", "dark": "#7b1fa2", "contrastText": "#fff" },
+      "error": { "main": "#d32f2f", "light": "#ef5350", "dark": "#c62828", "contrastText": "#fff" },
+      "warning": { "main": "#ed6c02", "light": "#ff9800", "dark": "#e65100", "contrastText": "#fff" },
+      "info": { "main": "#0288d1", "light": "#03a9f4", "dark": "#01579b", "contrastText": "#fff" },
+      "success": { "main": "#2e7d32", "light": "#4caf50", "dark": "#1b5e20", "contrastText": "#fff" },
+      "text": { "primary": "rgba(0, 0, 0, 0.87)", "secondary": "rgba(0, 0, 0, 0.6)", "disabled": "rgba(0, 0, 0, 0.38)" },
+      "divider": "rgba(0, 0, 0, 0.12)",
+      "background": { "paper": "#fff", "default": "#fff" },
+      "action": {
+        "active": "rgba(0, 0, 0, 0.54)",
+        "hover": "rgba(0, 0, 0, 0.04)",
+        "hoverOpacity": 0.04,
+        "selected": "rgba(0, 0, 0, 0.08)",
+        "selectedOpacity": 0.08,
+        "disabled": "rgba(0, 0, 0, 0.26)",
+        "disabledBackground": "rgba(0, 0, 0, 0.12)",
+        "disabledOpacity": 0.38,
+        "focus": "rgba(0, 0, 0, 0.12)",
+        "focusOpacity": 0.12,
+        "activatedOpacity": 0.12
+      }
+    },
+    "dark": {
+      "primary": { "main": "#90caf9", "light": "#e3f2fd", "dark": "#42a5f5", "contrastText": "rgba(0, 0, 0, 0.87)" },
+      "secondary": { "main": "#ce93d8", "light": "#f3e5f5", "dark": "#ab47bc", "contrastText": "rgba(0, 0, 0, 0.87)" },
+      "error": { "main": "#f44336", "light": "#e57373", "dark": "#d32f2f", "contrastText": "#fff" },
+      "warning": { "main": "#ffa726", "light": "#ffb74d", "dark": "#f57c00", "contrastText": "rgba(0, 0, 0, 0.87)" },
+      "info": { "main": "#29b6f6", "light": "#4fc3f7", "dark": "#0288d1", "contrastText": "rgba(0, 0, 0, 0.87)" },
+      "success": { "main": "#66bb6a", "light": "#81c784", "dark": "#388e3c", "contrastText": "rgba(0, 0, 0, 0.87)" },
+      "text": { "primary": "#fff", "secondary": "rgba(255, 255, 255, 0.7)", "disabled": "rgba(255, 255, 255, 0.5)" },
+      "divider": "rgba(255, 255, 255, 0.12)",
+      "background": { "paper": "#121212", "default": "#121212" }
+    },
+    "grey": {
+      "50": "#fafafa", "100": "#f5f5f5", "200": "#eeeeee", "300": "#e0e0e0", "400": "#bdbdbd",
+      "500": "#9e9e9e", "600": "#757575", "700": "#616161", "800": "#424242", "900": "#212121",
+      "A100": "#f5f5f5", "A200": "#eeeeee", "A400": "#bdbdbd", "A700": "#616161"
+    },
+    "common": { "black": "#000", "white": "#fff" },
+    "contrastThreshold": 3,
+    "tonalOffset": 0.2
+  },
+  "typography": {
+    "fontFamily": "\"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+    "fontSize": 14,
+    "htmlFontSize": 16,
+    "fontWeightLight": 300,
+    "fontWeightRegular": 400,
+    "fontWeightMedium": 500,
+    "fontWeightBold": 700,
+    "variants": {
+      "h1": { "fontWeight": 300, "fontSizePx": 96, "lineHeight": 1.167, "letterSpacingPx": -1.5 },
+      "h2": { "fontWeight": 300, "fontSizePx": 60, "lineHeight": 1.2, "letterSpacingPx": -0.5 },
+      "h3": { "fontWeight": 400, "fontSizePx": 48, "lineHeight": 1.167, "letterSpacingPx": 0 },
+      "h4": { "fontWeight": 400, "fontSizePx": 34, "lineHeight": 1.235, "letterSpacingPx": 0.25 },
+      "h5": { "fontWeight": 400, "fontSizePx": 24, "lineHeight": 1.334, "letterSpacingPx": 0 },
+      "h6": { "fontWeight": 500, "fontSizePx": 20, "lineHeight": 1.6, "letterSpacingPx": 0.15 },
+      "subtitle1": { "fontWeight": 400, "fontSizePx": 16, "lineHeight": 1.75, "letterSpacingPx": 0.15 },
+      "subtitle2": { "fontWeight": 500, "fontSizePx": 14, "lineHeight": 1.57, "letterSpacingPx": 0.1 },
+      "body1": { "fontWeight": 400, "fontSizePx": 16, "lineHeight": 1.5, "letterSpacingPx": 0.15 },
+      "body2": { "fontWeight": 400, "fontSizePx": 14, "lineHeight": 1.43, "letterSpacingPx": 0.15 },
+      "button": { "fontWeight": 500, "fontSizePx": 14, "lineHeight": 1.75, "letterSpacingPx": 0.4, "textTransform": "uppercase" },
+      "caption": { "fontWeight": 400, "fontSizePx": 12, "lineHeight": 1.66, "letterSpacingPx": 0.4 },
+      "overline": { "fontWeight": 400, "fontSizePx": 12, "lineHeight": 2.66, "letterSpacingPx": 1, "textTransform": "uppercase" }
+    }
+  },
+  "spacing": { "unitPx": 8, "usage": "theme.spacing(n) = n × 8px" },
+  "shape": { "borderRadius": 4 },
+  "breakpoints": { "xs": 0, "sm": 600, "md": 900, "lg": 1200, "xl": 1536 },
+  "zIndex": {
+    "mobileStepper": 1000, "fab": 1050, "speedDial": 1050, "appBar": 1100,
+    "drawer": 1200, "modal": 1300, "snackbar": 1400, "tooltip": 1500
+  },
+  "transitions": {
+    "easing": {
+      "easeInOut": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "easeOut": "cubic-bezier(0.0, 0, 0.2, 1)",
+      "easeIn": "cubic-bezier(0.4, 0, 1, 1)",
+      "sharp": "cubic-bezier(0.4, 0, 0.6, 1)"
+    },
+    "duration": {
+      "shortest": 150, "shorter": 200, "short": 250, "standard": 300,
+      "complex": 375, "enteringScreen": 225, "leavingScreen": 195
+    }
+  },
+  "shadows": "Not seeded — 25 elevation levels; generated by `npm run tokens:mui`."
+}
